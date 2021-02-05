@@ -1,0 +1,84 @@
+package com.smh.sequential;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+
+import android.database.Cursor;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
+
+import com.smh.sequential.Database.DatabaseFacade;
+import com.smh.sequential.Entity.Vocabulary;
+import com.smh.sequential.Setting.Setting;
+import com.smh.sequential.Utility.DoubleFirstSecondClickListener;
+import com.smh.sequential.Utility.Util;
+import com.smh.sequential.Utility.VocabularyEffect;
+
+import java.util.ArrayList;
+
+public class TrainActivity extends AppCompatActivity {
+
+
+    private ConstraintLayout dynamicLayout;
+    private TextView vocabularyTextView;
+
+    private Setting setting;
+
+    private VocabularyEffect vocabularyEffect;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_train);
+
+        Log.i(getClass().getName(), "onCreate: activity created");
+
+        dynamicLayout=findViewById(R.id.dynamicLayout);
+        vocabularyTextView=findViewById(R.id.vocabulary);
+
+        setting=Setting.getInstance(getApplicationContext());
+
+        vocabularyEffect=new VocabularyEffect(getApplicationContext(),vocabularyTextView,
+                MediaPlayer.create(getApplicationContext(),R.raw.keyboard_sound),
+                MediaPlayer.create(getApplicationContext(),R.raw.delete_sound));
+
+        dynamicLayout.setOnClickListener(new DoubleFirstSecondClickListener() {
+            @Override
+            public void onDoubleClick() {
+                vocabularyEffect.getBack();
+            }
+
+            @Override
+            public void onFirstClick() {
+                vocabularyEffect.pause();
+            }
+
+            @Override
+            public void onSecondClick() {
+                vocabularyEffect.resume();
+            }
+        });
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        Cursor cursor=DatabaseFacade.getListCursorByIdFromIndex(getApplicationContext(),
+                setting.getActiveListInformationDatabase().getId(),setting.getActiveListInformationDatabase().getIndex());
+
+        ArrayList<Vocabulary> vocabularies= Util.convertVocabularyCursorToArrayList(cursor);
+
+        vocabularyEffect.execute(vocabularies.toArray(new Vocabulary[]{}));
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        vocabularyEffect.cancel(true);
+    }
+}
