@@ -3,8 +3,10 @@
 ---
 
 Sequential is a vocabulary memorization and practice application on Android platform.
+Sequential traces your progress and success rate over the lists.
 Tha application needs internet connection to take lists from server, 
 it also offers to download lists in local in order to display them in offline mode.
+
 
 Tha app consist of mainly two main parts
 - Practice: Vocabularies in the list are sequentially displayed on the screen with typing effect.
