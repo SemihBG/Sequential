@@ -1,5 +1,6 @@
 package com.semihbkgr.sequential.server.service;
 
+import com.semihbkgr.sequential.server.entity.projection.VocabularyListInfo;
 import com.semihbkgr.sequential.server.repository.VocabularyListRepository;
 import com.semihbkgr.sequential.server.entity.VocabularyList;
 import lombok.RequiredArgsConstructor;
@@ -14,8 +15,8 @@ public class VocabularyListServiceImpl implements VocabularyListService {
     private final VocabularyListRepository vocabularyListRepository;
 
     @Override
-    public List<VocabularyList> findAll() {
-        return vocabularyListRepository.findAll();
+    public List<VocabularyListInfo> findAllInfo() {
+        return vocabularyListRepository.findAllBy();
     }
 
     @Override

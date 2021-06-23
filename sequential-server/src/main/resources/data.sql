@@ -1,11 +1,13 @@
-insert into vocabulary (eng,tr,vocabulary_list_id) VALUES
-('zero','sıfır',1),
-('one','bir',1),
-('two','iki',1),
-('three','üç',1),
-('four','dört',1),
-('five','beş',1),
-('six','altı',1),
-('seven','yedi',1),
-('eight','sekid',1),
-('nine','dokuz',1);
+insert into vocabulary_lists (id,name) VALUE (1,'numbers');
+
+insert into vocabulary (id,eng,tr,vocabulary_list_id) VALUES
+    (1,'zero','sıfır',1),
+    (2,'one','bir',1),
+    (3,'two','iki',1),
+    (4,'three','üç',1),
+    (5,'four','dört',1),
+    (6,'five','beş',1),
+    (7,'six','altı',1),
+    (8,'seven','yedi',1),
+    (9,'eight','sekid',1),
+    (10,'nine','dokuz',1);

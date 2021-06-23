@@ -1,6 +1,7 @@
 package com.semihbkgr.sequential.server.controller;
 
 import com.semihbkgr.sequential.server.entity.VocabularyList;
+import com.semihbkgr.sequential.server.entity.projection.VocabularyListInfo;
 import com.semihbkgr.sequential.server.exception.NonexistentTableException;
 import com.semihbkgr.sequential.server.service.VocabularyListService;
 import lombok.RequiredArgsConstructor;
@@ -27,8 +28,8 @@ public class VocabularyListController {
     }
 
     @GetMapping()
-    public List<VocabularyList> getAllLists(){
-        return vocabularyListService.findAll();
+    public List<VocabularyListInfo> getAllLists(){
+        return vocabularyListService.findAllInfo();
     }
 
 }
