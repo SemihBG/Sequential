@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Database;
+package com.semihbkgr.sequential.android.database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,8 +6,8 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.util.Log;
 
-import com.semihbkgr.sequential.android.Entity.Information;
-import com.semihbkgr.sequential.android.Entity.Vocabulary;
+import com.semihbkgr.sequential.android.entity.Information;
+import com.semihbkgr.sequential.android.entity.Vocabulary;
 
 import java.util.List;
 

@@ -1,11 +1,11 @@
-package com.semihbkgr.sequential.android.Setting;
+package com.semihbkgr.sequential.android.setting;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-import com.semihbkgr.sequential.android.Database.DatabaseFacade;
-import com.semihbkgr.sequential.android.Database.InformationDatabaseEntity;
+import com.semihbkgr.sequential.android.database.DatabaseFacade;
+import com.semihbkgr.sequential.android.database.InformationDatabaseEntity;
 
 
 public class Setting {

@@ -1,9 +1,9 @@
-package com.semihbkgr.sequential.android.Quiz;
+package com.semihbkgr.sequential.android.quiz;
 
 import android.content.Context;
 import android.util.Log;
 
-import com.semihbkgr.sequential.android.Setting.Setting;
+import com.semihbkgr.sequential.android.setting.Setting;
 
 public class Quiz {
 

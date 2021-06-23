@@ -1,14 +1,18 @@
-package com.semihbkgr.sequential.android.Entity;
+package com.semihbkgr.sequential.android.entity;
 
 
 import androidx.annotation.NonNull;
+import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
 public class Information implements Entity,Serializable {
 
+    @SerializedName("id")
     private int listId;
+    @SerializedName("name")
     private String listName;
+    @SerializedName("count")
     private int listSize;
 
     public Information(){}

@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Database;
+package com.semihbkgr.sequential.android.database;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -16,7 +16,7 @@ public class Provider extends ContentProvider {
 
     static SQLiteDatabase database;
 
-    private static final String CONTENT_AUTHORITY="com.smh.sequential.Database.Provider";
+    private static final String CONTENT_AUTHORITY="com.semihbkgr.sequential.android.Database.Provider";
     private static final String PATH_LISTS_NAME=DatabaseContracts.DATABASE_INFORMATION_TABLE_NAME;
 
     static final Uri BASE_CONTENT_URI=Uri.parse("content://"+CONTENT_AUTHORITY);

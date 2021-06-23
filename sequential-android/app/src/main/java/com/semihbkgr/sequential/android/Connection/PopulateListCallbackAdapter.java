@@ -1,8 +1,8 @@
-package com.semihbkgr.sequential.android.Connection;
+package com.semihbkgr.sequential.android.connection;
 
 import android.util.Log;
 
-import com.semihbkgr.sequential.android.Entity.Entity;
+import com.semihbkgr.sequential.android.entity.Entity;
 
 import java.util.ArrayList;
 import java.util.Arrays;

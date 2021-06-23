@@ -1,9 +1,9 @@
-package com.semihbkgr.sequential.android.Utility;
+package com.semihbkgr.sequential.android.util;
 
 import android.database.Cursor;
 
-import com.semihbkgr.sequential.android.Database.DatabaseContracts;
-import com.semihbkgr.sequential.android.Entity.Vocabulary;
+import com.semihbkgr.sequential.android.database.DatabaseContracts;
+import com.semihbkgr.sequential.android.entity.Vocabulary;
 
 import java.util.ArrayList;
 

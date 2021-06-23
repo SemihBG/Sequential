@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Utility;
+package com.semihbkgr.sequential.android.util;
 
 @FunctionalInterface
 public interface Execute {

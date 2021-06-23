@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Entity;
+package com.semihbkgr.sequential.android.entity;
 
 public interface Entity {
 }

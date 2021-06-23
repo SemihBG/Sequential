@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 
-import com.semihbkgr.sequential.android.Setting.Setting;
+import com.semihbkgr.sequential.android.setting.Setting;
 
 
 public class MainActivity extends AppCompatActivity {

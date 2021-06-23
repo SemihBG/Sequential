@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Adapter;
+package com.semihbkgr.sequential.android.adapter;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -9,8 +9,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.semihbkgr.sequential.android.Contracts;
-import com.semihbkgr.sequential.android.Fragment.ListsFragment;
-import com.semihbkgr.sequential.android.Fragment.ListsType;
+import com.semihbkgr.sequential.android.fragment.ListsFragment;
+import com.semihbkgr.sequential.android.fragment.ListsType;
 
 public class ListsPageAdapter extends FragmentStatePagerAdapter {
 

@@ -9,12 +9,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.semihbkgr.sequential.android.Database.DatabaseFacade;
-import com.semihbkgr.sequential.android.Entity.Vocabulary;
-import com.semihbkgr.sequential.android.Setting.Setting;
-import com.semihbkgr.sequential.android.Utility.DoubleFirstSecondClickListener;
-import com.semihbkgr.sequential.android.Utility.Util;
-import com.semihbkgr.sequential.android.Utility.VocabularyEffect;
+import com.semihbkgr.sequential.android.database.DatabaseFacade;
+import com.semihbkgr.sequential.android.entity.Vocabulary;
+import com.semihbkgr.sequential.android.setting.Setting;
+import com.semihbkgr.sequential.android.util.DoubleFirstSecondClickListener;
+import com.semihbkgr.sequential.android.util.Util;
+import com.semihbkgr.sequential.android.util.VocabularyEffect;
 
 import java.util.ArrayList;
 

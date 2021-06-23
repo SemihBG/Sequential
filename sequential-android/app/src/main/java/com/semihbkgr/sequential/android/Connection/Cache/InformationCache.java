@@ -1,9 +1,9 @@
-package com.semihbkgr.sequential.android.Connection.Cache;
+package com.semihbkgr.sequential.android.connection.cache;
 
 
 import android.util.Log;
 
-import com.semihbkgr.sequential.android.Entity.Information;
+import com.semihbkgr.sequential.android.entity.Information;
 
 import java.util.ArrayList;
 

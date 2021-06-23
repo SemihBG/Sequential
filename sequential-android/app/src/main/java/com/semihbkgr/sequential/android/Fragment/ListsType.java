@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Fragment;
+package com.semihbkgr.sequential.android.fragment;
 
 public enum ListsType {
 

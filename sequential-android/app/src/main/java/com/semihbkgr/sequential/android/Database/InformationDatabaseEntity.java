@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Database;
+package com.semihbkgr.sequential.android.database;
 
 public class InformationDatabaseEntity {
 

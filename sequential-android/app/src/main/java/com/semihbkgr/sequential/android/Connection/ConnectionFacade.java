@@ -1,12 +1,12 @@
-package com.semihbkgr.sequential.android.Connection;
+package com.semihbkgr.sequential.android.connection;
 
 import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.semihbkgr.sequential.android.Connection.Cache.InformationCache;
-import com.semihbkgr.sequential.android.Entity.Information;
-import com.semihbkgr.sequential.android.Entity.Vocabulary;
+import com.semihbkgr.sequential.android.connection.cache.InformationCache;
+import com.semihbkgr.sequential.android.entity.Information;
+import com.semihbkgr.sequential.android.entity.Vocabulary;
 
 import java.util.ArrayList;
 
@@ -87,6 +87,12 @@ public class ConnectionFacade {
         Gson gson=new GsonBuilder().setLenient().create();
         Retrofit retrofit = new Retrofit.Builder().baseUrl(ApiUrl.BASE_URL).addConverterFactory(GsonConverterFactory.create(gson)).build();
         ApiService apiService=retrofit.create(ApiService.class);
+
+        System.out.println("--------------------------");
+        System.out.println(information.getListId());
+        System.out.println(information.getListName());
+        System.out.println(information.getListSize());
+        System.out.println("--------------------------");
 
         Call<Vocabulary[]> vocbList=apiService.getList(information.getListName());
 

@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Fragment;
+package com.semihbkgr.sequential.android.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,16 +12,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.semihbkgr.sequential.android.Adapter.AllListsArrayListAdapter;
-import com.semihbkgr.sequential.android.Adapter.DownloadedListsCursorAdapter;
-import com.semihbkgr.sequential.android.Connection.Cache.InformationCache;
-import com.semihbkgr.sequential.android.Connection.ConnectionFacade;
+import com.semihbkgr.sequential.android.adapter.AllListsArrayListAdapter;
+import com.semihbkgr.sequential.android.adapter.DownloadedListsCursorAdapter;
+import com.semihbkgr.sequential.android.connection.cache.InformationCache;
+import com.semihbkgr.sequential.android.connection.ConnectionFacade;
 import com.semihbkgr.sequential.android.Contracts;
-import com.semihbkgr.sequential.android.Database.DatabaseFacade;
-import com.semihbkgr.sequential.android.Entity.Information;
+import com.semihbkgr.sequential.android.database.DatabaseFacade;
+import com.semihbkgr.sequential.android.entity.Information;
 import com.semihbkgr.sequential.android.ListContentActivity;
 import com.semihbkgr.sequential.android.R;
-import com.semihbkgr.sequential.android.Utility.ExecuteUtil;
+import com.semihbkgr.sequential.android.util.ExecuteUtil;
 
 import java.util.ArrayList;
 

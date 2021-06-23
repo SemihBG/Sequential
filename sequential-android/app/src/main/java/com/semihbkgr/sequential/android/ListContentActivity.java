@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
 
-import com.semihbkgr.sequential.android.Adapter.ListContentCursorAdapter;
-import com.semihbkgr.sequential.android.Database.DatabaseFacade;
+import com.semihbkgr.sequential.android.adapter.ListContentCursorAdapter;
+import com.semihbkgr.sequential.android.database.DatabaseFacade;
 
 public class ListContentActivity extends AppCompatActivity {
 

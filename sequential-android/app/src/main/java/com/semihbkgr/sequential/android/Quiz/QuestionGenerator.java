@@ -1,10 +1,10 @@
-package com.semihbkgr.sequential.android.Quiz;
+package com.semihbkgr.sequential.android.quiz;
 
 import android.content.Context;
 import android.util.Log;
 
-import com.semihbkgr.sequential.android.Database.DatabaseFacade;
-import com.semihbkgr.sequential.android.Entity.Vocabulary;
+import com.semihbkgr.sequential.android.database.DatabaseFacade;
+import com.semihbkgr.sequential.android.entity.Vocabulary;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Adapter;
+package com.semihbkgr.sequential.android.adapter;
 
 import android.content.Context;
 import android.util.Log;
@@ -13,13 +13,13 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.semihbkgr.sequential.android.Connection.ConnectionFacade;
-import com.semihbkgr.sequential.android.Database.DatabaseFacade;
-import com.semihbkgr.sequential.android.Entity.Information;
-import com.semihbkgr.sequential.android.Entity.Vocabulary;
+import com.semihbkgr.sequential.android.connection.ConnectionFacade;
+import com.semihbkgr.sequential.android.database.DatabaseFacade;
+import com.semihbkgr.sequential.android.entity.Information;
+import com.semihbkgr.sequential.android.entity.Vocabulary;
 import com.semihbkgr.sequential.android.R;
-import com.semihbkgr.sequential.android.Setting.Setting;
-import com.semihbkgr.sequential.android.Utility.ExecuteUtil;
+import com.semihbkgr.sequential.android.setting.Setting;
+import com.semihbkgr.sequential.android.util.ExecuteUtil;
 
 import java.util.ArrayList;
 

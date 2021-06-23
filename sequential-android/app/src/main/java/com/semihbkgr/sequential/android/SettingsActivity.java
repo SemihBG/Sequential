@@ -7,7 +7,7 @@ import android.util.Log;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.semihbkgr.sequential.android.Setting.Setting;
+import com.semihbkgr.sequential.android.setting.Setting;
 
 public class SettingsActivity extends AppCompatActivity {
 

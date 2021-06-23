@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Quiz;
+package com.semihbkgr.sequential.android.quiz;
 
 import java.util.Objects;
 

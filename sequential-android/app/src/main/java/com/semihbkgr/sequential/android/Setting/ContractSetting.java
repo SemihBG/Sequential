@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Setting;
+package com.semihbkgr.sequential.android.setting;
 
 class ContractSetting {
 

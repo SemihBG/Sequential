@@ -1,7 +1,7 @@
-package com.semihbkgr.sequential.android.Connection;
+package com.semihbkgr.sequential.android.connection;
 
-import com.semihbkgr.sequential.android.Entity.Information;
-import com.semihbkgr.sequential.android.Entity.Vocabulary;
+import com.semihbkgr.sequential.android.entity.Information;
+import com.semihbkgr.sequential.android.entity.Vocabulary;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

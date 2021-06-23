@@ -11,8 +11,8 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.semihbkgr.sequential.android.Setting.Setting;
-import com.semihbkgr.sequential.android.Utility.AnimationtUtil;
+import com.semihbkgr.sequential.android.setting.Setting;
+import com.semihbkgr.sequential.android.util.AnimationtUtil;
 
 public class MenuActivity extends AppCompatActivity {
 

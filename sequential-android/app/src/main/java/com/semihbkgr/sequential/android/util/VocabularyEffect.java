@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Utility;
+package com.semihbkgr.sequential.android.util;
 
 import android.content.Context;
 import android.media.MediaPlayer;
@@ -6,10 +6,10 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.semihbkgr.sequential.android.Database.DatabaseFacade;
-import com.semihbkgr.sequential.android.Database.InformationDatabaseEntity;
-import com.semihbkgr.sequential.android.Entity.Vocabulary;
-import com.semihbkgr.sequential.android.Setting.Setting;
+import com.semihbkgr.sequential.android.database.DatabaseFacade;
+import com.semihbkgr.sequential.android.database.InformationDatabaseEntity;
+import com.semihbkgr.sequential.android.entity.Vocabulary;
+import com.semihbkgr.sequential.android.setting.Setting;
 
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;

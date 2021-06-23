@@ -1,5 +1,6 @@
 package com.semihbkgr.sequential.server.controller;
 
+import com.semihbkgr.sequential.server.entity.Vocabulary;
 import com.semihbkgr.sequential.server.entity.VocabularyList;
 import com.semihbkgr.sequential.server.entity.projection.VocabularyListInfo;
 import com.semihbkgr.sequential.server.exception.NonexistentTableException;
@@ -21,10 +22,10 @@ public class VocabularyListController {
     private final VocabularyListService vocabularyListService;
 
     @GetMapping("/{listName}")
-    public VocabularyList gelListByNAme(@PathVariable("listName") String listName) {
+    public List<Vocabulary> gelListByNAme(@PathVariable("listName") String listName) {
         if (null == vocabularyListService.findByName(listName))
             throw new NonexistentTableException("No such table exists, table name = " + listName);
-        return vocabularyListService.findByName(listName);
+        return vocabularyListService.findByName(listName).getVocabularies();
     }
 
     @GetMapping()

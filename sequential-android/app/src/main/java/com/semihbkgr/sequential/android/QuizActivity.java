@@ -8,11 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.semihbkgr.sequential.android.Quiz.Choice;
-import com.semihbkgr.sequential.android.Quiz.Question;
-import com.semihbkgr.sequential.android.Quiz.Quiz;
-import com.semihbkgr.sequential.android.Quiz.QuizListener;
-import com.semihbkgr.sequential.android.Setting.Setting;
+import com.semihbkgr.sequential.android.quiz.Choice;
+import com.semihbkgr.sequential.android.quiz.Question;
+import com.semihbkgr.sequential.android.quiz.Quiz;
+import com.semihbkgr.sequential.android.quiz.QuizListener;
+import com.semihbkgr.sequential.android.setting.Setting;
 
 
 public class QuizActivity extends AppCompatActivity {

@@ -9,8 +9,8 @@ import androidx.fragment.app.FragmentActivity;
 
 import androidx.viewpager.widget.ViewPager;
 
-import com.semihbkgr.sequential.android.Fragment.ListsType;
-import com.semihbkgr.sequential.android.Adapter.ListsPageAdapter;
+import com.semihbkgr.sequential.android.fragment.ListsType;
+import com.semihbkgr.sequential.android.adapter.ListsPageAdapter;
 
 public class ListActivity  extends FragmentActivity {
 

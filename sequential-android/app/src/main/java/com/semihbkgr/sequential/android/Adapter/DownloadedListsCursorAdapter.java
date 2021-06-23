@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Adapter;
+package com.semihbkgr.sequential.android.adapter;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -11,9 +11,9 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.semihbkgr.sequential.android.Database.DatabaseContracts;
+import com.semihbkgr.sequential.android.database.DatabaseContracts;
 import com.semihbkgr.sequential.android.R;
-import com.semihbkgr.sequential.android.Setting.Setting;
+import com.semihbkgr.sequential.android.setting.Setting;
 
 import java.util.ArrayList;
 

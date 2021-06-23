@@ -28,8 +28,8 @@
         </activity>
 
         <provider
-            android:name=".Database.Provider"
-            android:authorities="com.semihbkgr.sequential.android.Database.Provider"
+            android:name=".database.Provider"
+            android:authorities="com.semihbkgr.sequential.android.database.Provider"
             android:exported="false" />
 
     </application>

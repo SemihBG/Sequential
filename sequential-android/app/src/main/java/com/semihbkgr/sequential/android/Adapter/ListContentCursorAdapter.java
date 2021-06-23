@@ -1,4 +1,4 @@
-package com.semihbkgr.sequential.android.Adapter;
+package com.semihbkgr.sequential.android.adapter;
 
 
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
 
-import com.semihbkgr.sequential.android.Database.DatabaseContracts;
+import com.semihbkgr.sequential.android.database.DatabaseContracts;
 import com.semihbkgr.sequential.android.R;
 
 public class ListContentCursorAdapter extends CursorAdapter {
