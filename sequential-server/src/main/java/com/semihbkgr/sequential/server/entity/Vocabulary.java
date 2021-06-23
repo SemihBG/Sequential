@@ -1,9 +1,7 @@
 package com.semihbkgr.sequential.server.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -19,5 +17,11 @@ public class Vocabulary {
     private int id;
     private String eng;
     private String tr;
+
+    @JsonIgnore
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    @ManyToOne()
+    private VocabularyList vocabularyList;
 
 }
