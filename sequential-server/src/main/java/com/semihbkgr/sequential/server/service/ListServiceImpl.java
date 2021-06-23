@@ -2,6 +2,7 @@ package com.semihbkgr.sequential.server.service;
 
 import com.semihbkgr.sequential.server.dao.ListDao;
 import com.semihbkgr.sequential.server.entity.Vocabulary;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,10 +11,10 @@ import java.util.List;
 
 @Slf4j
 @Service
+@RequiredArgsConstructor
 public class ListServiceImpl implements ListService {
 
-    @Autowired
-    private ListDao listDao;
+    private final ListDao listDao;
 
     @Override
     public List<Vocabulary> findAll(String listName) {

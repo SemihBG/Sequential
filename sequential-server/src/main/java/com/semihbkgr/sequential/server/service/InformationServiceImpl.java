@@ -2,6 +2,7 @@ package com.semihbkgr.sequential.server.service;
 
 import com.semihbkgr.sequential.server.dao.InformationDao;
 import com.semihbkgr.sequential.server.entity.Information;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,10 +11,10 @@ import java.util.List;
 
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class InformationServiceImpl implements InformationService{
 
-    @Autowired
-    private InformationDao informationDao;
+    private final InformationDao informationDao;
 
     @Override
     public List<Information> findAll() {

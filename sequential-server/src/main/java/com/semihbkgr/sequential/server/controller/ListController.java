@@ -6,6 +6,7 @@ import com.semihbkgr.sequential.server.entity.Vocabulary;
 import com.semihbkgr.sequential.server.exception.NonexistentTableException;
 import com.semihbkgr.sequential.server.service.InformationService;
 import com.semihbkgr.sequential.server.service.ListService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,25 +18,18 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/list")
+@RequiredArgsConstructor
 public class ListController {
 
-    @Autowired
-    private ListService listService;
+    private final ListService listService;
+    private final InformationService informationService;
+    private final ObjectMapper objectMapper;
 
-    @Autowired
-    private InformationService informationService;
-
-    @Autowired
-    private ObjectMapper objectMapper;
-
-    @GetMapping("/{list_name}")
-    public List<Vocabulary> gelAll(@PathVariable("list_name") String listName) throws JsonProcessingException {
-        if(null==informationService.findByListName(listName)){
-            throw new NonexistentTableException("No such table exists, table name = "+listName);
-        }
+    @GetMapping("/{listName}")
+    public List<Vocabulary> gelAll(@PathVariable("listName") String listName) {
+        if (null == informationService.findByListName(listName))
+            throw new NonexistentTableException("No such table exists, table name = " + listName);
         return listService.findAll(listName);
     }
-
-
 
 }

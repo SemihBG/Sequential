@@ -6,7 +6,8 @@ import java.util.List;
 
 public interface ListService {
 
-    public List<Vocabulary> findAll(String listName);
-    public void save(String listName, Vocabulary vocabulary);
+    List<Vocabulary> findAll(String listName);
+
+    void save(String listName, Vocabulary vocabulary);
 
 }

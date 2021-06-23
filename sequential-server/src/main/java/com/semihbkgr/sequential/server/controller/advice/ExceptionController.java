@@ -15,7 +15,7 @@ public class ExceptionController {
     public ResponseEntity<String> nonexistentTableExceptionHandler(Exception exception){
         HttpStatus httpStatus=HttpStatus.BAD_REQUEST;
         String response="<h1>Exception</h1>Exception Message = "+exception.getMessage();
-        return new ResponseEntity<String>(response,httpStatus);
+        return new ResponseEntity<>(response,httpStatus);
     }
 
 }
