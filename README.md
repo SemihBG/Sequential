@@ -1,4 +1,4 @@
-#Sequential
+# Sequential
 
 ---
 
@@ -18,8 +18,15 @@ Tha app consist of mainly two main parts
 <ul>
 <li>
 <h4><a href="sequential-server">sequential-server</a></h4>
-It is rest api project of sequential.'sequential-server' provides vocabulary list information and vocabulary list api endpoints.
+It is rest api project of Sequential. It provides vocabulary list and information api endpoints.
+/list -> gets information of all lists
+/list/{list_name} -> gets vocabularies of list by given list name
 </li>
 <h4><a href="sequential-android">sequential-android</a></h4>
-It is android app of sequential. It uses api endpoint to take lists and inforamtion from server.
+It is Android application of Sequential. It uses api endpoint to take lists and inforamtion from server.
 </ul>
+
+<p float="left">
+<img src="./images/menu.png" width="200" height="350" alt="in-app image">
+<img src="./images/downloadedLists.png" width="200" height="350" alt="in-app image">
+</p>
